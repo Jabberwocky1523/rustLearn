@@ -3,9 +3,9 @@ use rand::Rng;
 use std::cmp::Ordering;
 use std::io;
 mod list;
-use list::list::LinkList::{self};
+use list::list::LinkList::LinkList;
 fn main() {
-    let mut list = LinkList::LinkList::new();
+    let mut list = LinkList::new();
     list.push(1);
     list.push(2);
     list.print();
