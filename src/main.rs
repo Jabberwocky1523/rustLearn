@@ -3,14 +3,11 @@ use core::num;
 use std::cmp::Ordering;
 use std::io;
 mod list;
-
 use list::list::LinkList::LinkList;
-
 use std::error::Error;
-
-
+mod lib;
 fn main(){
-
+    let _ = lib::slint().unwrap();
 }
 // fn main() {
 //     let mut list = LinkList::new();
