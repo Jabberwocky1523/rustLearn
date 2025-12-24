@@ -1,0 +1,13 @@
+{
+  "workbench.startupEditor": "none",
+  "workbench.sideBar.location": "right",
+  "files.autoSave": "off",
+  "explorer.openEditors.visible": 0,
+  "rust-analyzer.cargo.extraEnv": {
+    "BINDING_PATH": "${workspaceFolder}/build/bindings.rs"
+  },
+  "rust-analyzer.check.extraEnv": {
+    "BINDING_PATH": "${workspaceFolder}/build/bindings.rs"
+  },
+  "rust-analyzer.restartServerOnConfigChange": true
+}
