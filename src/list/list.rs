@@ -2,7 +2,7 @@ use std::{boxed, option, os::unix::net::UnixDatagram, ptr::null, str::Lines};
 struct LinkNode {
     data: i32,
     next: Option<Box<LinkNode>>,
- }
+}
 pub struct LinkList {
     head: Option<Box<LinkNode>>,
 }
