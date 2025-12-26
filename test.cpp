@@ -9,6 +9,7 @@ int main()
         std::cout << "error" << std::endl;
         return 1;
     }
+    int a = 1;
     func myfunc = (func)dlsym(handle, "open");
     std::cout << myfunc();
     return 0;

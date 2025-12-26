@@ -9,5 +9,7 @@
   "rust-analyzer.check.extraEnv": {
     "BINDING_PATH": "${workspaceFolder}/build/bindings.rs"
   },
-  "rust-analyzer.restartServerOnConfigChange": true
+  "rust-analyzer.restartServerOnConfigChange": true,
+  "editor.formatOnType": true,
+  "editor.formatOnSave": true
 }

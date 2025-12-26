@@ -1,14 +1,42 @@
 
-use core::num;
-use std::cmp::Ordering;
-use std::io;
+use std::{collections::HashMap, io, vec};
+
+use crate::{ list::LinkList};
 mod list;
-use list::list::LinkList::LinkList;
-use std::error::Error;
-mod lib;
-fn main(){
-    let _ = lib::slint().unwrap();
+/// 生成并打印前 n 个斐波那契数
+fn fibonacci(n: u32) {
+    let (mut current, mut next) = (1u64, 1u64);
+    
+    for _ in 0..n {
+        println!("{}", current);
+        (current, next) = (next, current + next);
+    }
 }
+fn main() {
+  let mut s1 = String::from("123");
+  let s2 = s1.clone();
+  println!("{} {}",s1,s2);
+  let x :(i32,i32) = (1,2);
+  let mut link = LinkList::new();
+  let mut map:HashMap<String,i32> = HashMap::new();
+  map.insert(String::from("123"), 123);
+  let a = match map.get("123") {
+      Some(state)=>*state,
+      None=>2
+  };
+  print!("{}",a);
+}
+//   let mut buf = String::new();
+    
+//     io::stdin()
+//         .read_line(&mut buf)
+//         .expect("读取输入失败");
+    
+//     let n: u32 = buf.trim()
+//         .parse()
+//         .unwrap_or(0);
+    
+//     fibonacci(n);
 // fn main() {
 //     let mut list = LinkList::new();
 //     list.push(1);
